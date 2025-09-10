@@ -1,4 +1,4 @@
-# telegram-to-WhatsApp
+# Telegram-to-WhatsApp
 Forward Telegram messages to WhatsApp
 
 ## Prerequisites
