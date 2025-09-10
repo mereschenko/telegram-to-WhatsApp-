@@ -112,18 +112,6 @@ Use `telegram_to_whatsapp.py` only if you need to host media yourself and can ex
 Twilio's official Python SDK is fully synchronous. The listener therefore wraps the `twilio_client.messages.create` call in `loop.run_in_executor` so that the Telethon event handler remains non-blocking. If you adapt the code and need non-blocking behaviour, use the same pattern (see `listener.py` lines 83–91).
 
 
-## Running tests
-
-The repository includes unit tests for the listener. Install the development
-dependencies with `pip` and then invoke `pytest`:
-
-```bash
-pip install -r requirements.txt
-pytest
-```
-
-The tests mock Twilio and Telegram so no real credentials are required.
-
 ## Troubleshooting
 
 ### Twilio error 21620: "Invalid media URL(s)"
